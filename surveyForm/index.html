@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to fill out the survey.</p>
+    <form id="survey-form">
+      <label id="name-label" class="individual-label">Name</label>
+      <input id="name" type="text" class="parent-width" placeholder="Enter your name" required>
+      <label id="email-label" class="individual-label">Email</label>
+      <input id="email" type="email" class="parent-width" placeholder="Enter your email" required>
+      <label id="number-label" class="individual-label">Age (optional)</label>
+      <input id="number" type="number" class="parent-width" min="13" max="120" placeholder="Age">
+      <label class="individual-label">Which option best describes your current role?</label>
+      <select id="dropdown" class="parent-width">
+        <option value="">Select current role</option>
+        <option value="student">Student</option>
+        <option value="full-time-job">Full-time job</option>
+        <option value="prefer-not-to-say">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+      <label class="individual-label">Would you recommend us to a friend?</label>
+      <label><input type="radio" name="recommendation" value="definitely" checked> Definitely</label>
+      <label><input type="radio" name="recommendation" value="maybe"> Maybe</label>
+      <label><input type="radio" name="recommendation" value="not-sure"> Not sure</label>
+      <label class="individual-label">What would you like us to do? (Check all that apply)</label>
+      <label><input type="checkbox" value="front-end-projects"> Front-end Projects</label>
+      <label><input type="checkbox" value="back-end-projects"> Back-end Projects</label>
+      <label><input type="checkbox" value="challenges"> Challenges</label>
+      <label><input type="checkbox" value="open-source-community"> Open Source Community</label>
+      <label><input type="checkbox" value="city-meetups"> City Meetups</label>
+      <label><input type="checkbox" value="forum"> Forum</label>
+      <label><input type="checkbox" value="additional-courses"> Additional Courses</label>
+      <label class="individual-label">Any comments or suggestions?</label>
+      <textarea class="parent-width" rows="7" cols="21" placeholder="Enter your comment here..."></textarea>
+      <input id="submit" type="submit" class="parent-width" value="Submit">
+    </form>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+body {
+  background-color: royalblue;
+  font-family: "Gill Sans", sans-serif;
+  color: white;
+}
+
+h1 {
+  margin-top: 40px; 
+  text-align: center;
+}
+
+p {
+  margin-top: -10px;
+  text-align: center;
+  font-style: italic;
+}
+
+form {
+  margin: 20px auto;
+  border-radius: 5px;
+  min-width: 400px;
+  max-width: 800px;
+  width: 700px;
+  padding: 30px 15px;
+  background-color: navy;
+}
+
+label {
+  display: block;
+}
+
+input[type="submit"] {
+  display: block;
+  padding: 10px 0;
+  color: white;
+  background-color: mediumseagreen;
+  border: medium solid mediumseagreen;
+}
+
+.parent-width {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 5px 0;
+}
+
+input[value="not-sure"], input[value="additional-courses"] {
+  margin-bottom: 15px;
+}
+
+.individual-label {
+  margin-bottom: 5px;
+}
+
+select {
+  padding: 1px 0;
+}
