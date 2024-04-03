@@ -1,0 +1,161 @@
+:root {
+  --theme-color: lightgray;
+  --black: black;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--theme-color);
+  font-family: "Gill Sans", sans-serif;
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+#navbar li {
+  list-style: none;
+  margin: 5px;
+  padding: 5px;
+}
+
+#header {
+  width: 100%;
+  background: var(--theme-color);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+}
+
+main {
+  padding-top: 50px;
+}
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#projects {
+  padding-top: 50px;
+  text-align: center;
+}
+
+#projects h2 {
+  text-decoration: underline;
+  margin: 0 auto 20px auto;
+}
+
+.projects-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 10px;
+  place-items: center;
+  margin-bottom: 10px;
+}
+
+.project {
+  width: 380px;
+}
+
+.project-tile {
+  text-decoration: none;
+}
+
+.project-tile img {
+  height: 350px;
+  width: 380px;
+  object-fit: cover;
+}
+
+.project-label {
+  width: 380px;
+  padding: 10px;
+  text-align: center;
+  background: var(--black);
+  color: var(--theme-color);
+}
+
+.project-label span {
+  color: var(--black);
+}
+
+.project:hover .project-label span {
+  color: var(--theme-color);
+  transition: color 1s ease-in-out;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px;
+  background: var(--black);
+  border-radius: 5px;
+  color: var(--theme-color);
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.button:hover {
+  transform: translateX(2px);
+  transition: transform 1s ease-in-out;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.contact-link {
+  display: inline-block;
+  margin: 50px 10px;
+  padding: 10px;
+  background: var(--black);
+  border-radius: 5px;
+  color: var(--theme-color);
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  transform: translateY(5px);
+  transition: transform 1s ease-in-out;
+}
+
+footer {
+  margin: 10px;
+  border-top: 1px solid var(--black);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 720px) {
+  .projects-list {
+    grid-template-columns: 1fr;
+  }
+}
