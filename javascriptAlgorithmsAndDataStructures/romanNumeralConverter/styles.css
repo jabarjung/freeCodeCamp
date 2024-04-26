@@ -1,0 +1,96 @@
+:root {
+  --theme-color: lightgreen;
+  --secondary-color: yellow;
+  --color1: black;
+  --color2: lightblue;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--theme-color);
+  font-family: "Gill Sans", sans-serif;
+}
+
+.roman-numeral-converter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: auto;
+}
+
+.roman-numeral-converter * {
+  margin-bottom: 20px;
+}
+
+img {
+  width: 300px;
+  height: auto;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+.converter {
+  border: 2px solid var(--color1);
+  background: var(--secondary-color);
+  padding: 10px;
+  width: 500px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.converter p {
+  font-size: large;
+  font-weight: bold;
+}
+
+#number {
+  border: solid var(--color1);
+  padding: 10px;
+  width: 400px;
+}
+
+#convert-btn {
+  border: solid var(--color1);
+  padding: 10px;
+  width: 400px;
+  background: var(--color2);
+  font-weight: bold;
+}
+
+#convert-btn:hover {
+  cursor: pointer;
+}
+
+#output {
+  border: 2px solid var(--color1);
+  background: var(--secondary-color);
+  padding: 10px;
+  width: 500px;
+  height: 150px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#output p {
+  font-size: large;
+  font-weight: bold;
+}
