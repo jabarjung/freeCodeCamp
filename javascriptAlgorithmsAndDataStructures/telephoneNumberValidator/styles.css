@@ -1,0 +1,99 @@
+:root {
+  --theme-color: #facf5a;
+  --secondary-color: #49beb7;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--theme-color);
+  font-family: "Gill Sans", sans-serif;
+}
+
+.telephone-number-validator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: auto;
+}
+
+.telephone-number-validator * {
+  margin-bottom: 20px;
+}
+
+img {
+  width: 300px;
+  height: auto;
+}
+
+h1 {
+  text-transform: capitalize;
+}
+
+.validator {
+  border: 2px solid var(--theme-color);
+  border-radius: 10px;
+  background: var(--secondary-color);
+  padding: 10px;
+  width: 500px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.validator p {
+  font-size: large;
+  font-weight: bold;
+}
+
+#user-input {
+  border: solid var(--theme-color);
+  border-radius: 10px;
+  padding: 10px;
+  width: 300px;
+}
+
+#check-btn, #clear-btn {
+  border: solid var(--theme-color);
+  border-radius: 10px;
+  padding: 10px;
+  width: 100px;
+  background: var(--theme-color);
+  font-weight: bold;
+}
+
+#check-btn, #clear-btn {
+  cursor: pointer;
+}
+
+#results-div {
+  border: 2px solid var(--theme-color);
+  border-radius: 10px;
+  background: var(--secondary-color);
+  padding: 10px;
+  width: 500px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+}
+
+#results-div p {
+  font-size: large;
+  font-weight: bold;
+}
