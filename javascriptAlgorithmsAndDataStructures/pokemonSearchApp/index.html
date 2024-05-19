@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles.css">
+  <title>Pokemon Search App</title>
+</head>
+<body>
+  <div class="pokemon-search-app-project">
+    <img src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="freeCodeCamp"/>
+    <h1>pokemon search app</h1>
+    <div class="pokemon-search-app">
+      <p>Search for Pokemon Name or ID:</p>
+      <input id="search-input" type="text" required />
+      <button id="search-button" type="button">Search</button>
+      <div id="main-stats">
+        <p><span id="pokemon-name"></span> <span id="pokemon-id"></span></p>
+        <p><span id="weight"></span> <span id="height"></span></p>
+        <img id="sprite" />
+        <p id="types"></p>
+      </div>
+      <div id="other-stats">
+        <p>Base: <span>Stats</span></p>
+        <p>HP: <span id="hp"></span></p>
+        <p>Attack: <span id="attack"></span></p>
+        <p>Defense: <span id="defense"></span></p>
+        <p>Sp. Attack: <span id="special-attack"></span></p>
+        <p>Sp. Defense: <span id="special-defense"></span></p>
+        <p>Speed: <span id="speed"></span></p>
+      </div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
